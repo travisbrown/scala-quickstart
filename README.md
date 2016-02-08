@@ -1,4 +1,4 @@
-# Getting started in the Scala REPL
+# Scala quickstart
 
 This is a basic [SBT][sbt] project designed to help you start working
 effectively in a Scala REPL (read-eval-print loop) as quickly as possible. Once
@@ -27,43 +27,12 @@ scala>
 You can now type Scala definitions and expressions and they will be evaluated
 immediately.
 
-## Scaladoc tips
-
-The Scala standard library has [extensive API documentation][scala-scaladocs],
-but some useful features of the Scaladoc interface aren't immediately obvious.
-
-### Browsing symbolic operators
-
-For example, suppose you see the symbol `/:` in some Scala code. You
-could try to figure out what type it's being called on and search for that type,
-but you can also browse symbolic operators like this directly in the Scaladoc
-interface. To do this, click the small `#` in the upper left corner of the
-screen.
-
-![Operator list link](/screenshots/operators-01.png)
-
-Now you can search the page for `/:`:
-
-![Operator list](/screenshots/operators-02.png)
-
-### Instance and companion object definitions
-
-Another simple but useful feature (which I personally only discovered after
-writing Scala for an embarrassingly long time) is the ability to switch easily
-between the docs for a class or trait and its companion object. If you're
-reading the docs for the `List` class, for example:
-
-![Operator list link](/screenshots/class.png)
-
-The circe with a "C" in it is a link that will take you to the docs for the
-`List` companion object:
-
-![Operator list link](/screenshots/object.png)
-
-There's no need to search for `List` again to be able to select the object
-instead of the class. Clicking the "O" will take you back to the class.
-
 ## REPL tips
+
+Most of the time the REPL should just do what you'd expect it to do (try to
+evaluate code and print the result), but in some cases you may need or want to
+use special REPL-specific commands that it provides to accomplish certain
+things.
 
 ### Defining companions
 
@@ -214,6 +183,42 @@ Predef.intWrapper(1).to(3).flatMap(
 ```
 
 This takes some processing to understand, but at least everything is explicit.
+
+## Scaladoc tips
+
+The Scala standard library has [extensive API documentation][scala-scaladocs],
+but some useful features of the Scaladoc interface aren't immediately obvious.
+
+### Browsing symbolic operators
+
+For example, suppose you see the symbol `/:` in some Scala code. You
+could try to figure out what type it's being called on and search for that type,
+but you can also browse symbolic operators like this directly in the Scaladoc
+interface. To do this, click the small `#` in the upper left corner of the
+screen.
+
+![Operator list link](/screenshots/operators-01.png)
+
+Now you can search the page for `/:`:
+
+![Operator list](/screenshots/operators-02.png)
+
+### Instance and companion object definitions
+
+Another simple but useful feature (which I personally only discovered after
+writing Scala for an embarrassingly long time) is the ability to switch easily
+between the docs for a class or trait and its companion object. If you're
+reading the docs for the `List` class, for example:
+
+![Operator list link](/screenshots/class.png)
+
+The circe with a "C" in it is a link that will take you to the docs for the
+`List` companion object:
+
+![Operator list link](/screenshots/object.png)
+
+There's no need to search for `List` again to be able to select the object
+instead of the class. Clicking the "O" will take you back to the class.
 
 [java]: https://www.java.com/en/download/
 [sbt]: http://www.scala-sbt.org
