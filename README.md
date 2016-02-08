@@ -213,7 +213,7 @@ reading the docs for the `List` class, for example:
 
 ![Operator list link](/screenshots/class.png)
 
-The circe with a "C" in it is a link that will take you to the docs for the
+The circle with a "C" in it is a link that will take you to the docs for the
 `List` companion object:
 
 ![Operator list link](/screenshots/object.png)
