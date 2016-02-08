@@ -137,11 +137,12 @@ doubled: String = aa
 res0: Int = 2
 ```
 
-### Desugaring implicits and other syntactic magic
+### Desugaring extension methods and other syntactic magic
 
-Thanks to the magic of extension methods, it's often very difficult to determine
-why you can call certain methods on types and where these methods are coming
-from. We've been writing the following, for example:
+Thanks to the magic of extension methods and implicit conversions, it's often
+very difficult to determine why you can call certain methods on certain
+expressions and where these methods are coming from. We've been writing the
+following, for example:
 
 ```scala
 scala> val doubled = "a" * 2
